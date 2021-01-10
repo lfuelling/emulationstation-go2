@@ -1,5 +1,7 @@
 Also known as "Really Bad Technical Documentation"
 
+THE ODROID LOGO IS HARDCODED AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
 These are mostly notes I create as I go along, marking potential gotchas for people who might try to extend my code.
 Some day I'll try and add an overview of the code structure, what each class does, etc.
 

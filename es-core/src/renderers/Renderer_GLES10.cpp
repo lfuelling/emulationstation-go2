@@ -396,24 +396,28 @@ namespace Renderer
 				}
 			}
 
+			/* WHY WOULD YOU HARDCODE THIS
+			WHAT THE FLYING FUCK
 			{
-				// Title
-				const uint8_t* src = odroid_image.pixel_data;
-				int src_stride = odroid_image.width * sizeof(short);
+            				// Title
+            				const uint8_t* src = odroid_image.pixel_data;
+            				int src_stride = odroid_image.width * sizeof(short);
 
-				uint8_t* dst = (uint8_t*)go2_surface_map(titlebarSurface);
-				int dst_stride = go2_surface_stride_get(titlebarSurface);
+            				uint8_t* dst = (uint8_t*)go2_surface_map(titlebarSurface);
+            				int dst_stride = go2_surface_stride_get(titlebarSurface);
 
-				dst += ((w / 2) - (odroid_image.width / 2)) * sizeof(short);
+            				dst += ((w / 2) - (odroid_image.width / 2)) * sizeof(short);
 
-				for (int y = 0; y < 16; ++y)
-				{
-					memcpy(dst, src, src_stride);
+            				for (int y = 0; y < 16; ++y)
+            				{
+            					memcpy(dst, src, src_stride);
 
-					src += src_stride;
-					dst += dst_stride;
-				}
-			}
+            					src += src_stride;
+            					dst += dst_stride;
+            				}
+            			}
+
+			*/
 
 
 			go2_context_swap_buffers(context);
